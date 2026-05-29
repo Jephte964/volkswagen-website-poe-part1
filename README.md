@@ -153,5 +153,5 @@ The main goals of this website are:
 This project is an educational submission and represents my own work.
 
 ---
-👉 or prep Part 3 (JavaScript phase)
+
 

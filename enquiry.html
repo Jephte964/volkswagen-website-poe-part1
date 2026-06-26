@@ -51,7 +51,7 @@
         <!-- Enquiry Form -->
         <section>
 
-            <form>
+            <form id="enquiryForm" action="#" method="post">
 
                 <!-- Full Name -->
                 <label for="fullname">
@@ -83,73 +83,67 @@
 
                 <br><br>
 
-                <!-- Phone Number -->
-                <label for="phone">
-                    Phone Number:
-                </label>
+            <!-- Phone Number -->
+<label for="phone">
+    Phone Number:
+</label>
 
-                <br>
+<br>
 
-                <input type="tel"
-                       id="phone"
-                       name="phone"
-                       placeholder="Enter your phone number">
+<input type="tel"
+       id="phone"
+       name="phone"
+       placeholder="Enter your phone number"
+       pattern="[0-9]{10}"
+       title="Please enter a 10-digit phone number"
+       required>
 
-                <br><br>
+<br><br>
 
-                <!-- Vehicle Selection -->
-                <label for="vehicle">
-                    Select Vehicle:
-                </label>
+            
+                
+          <!-- Vehicle Selection -->
+<label for="vehicle">
+    Select Vehicle:
+</label>
 
-                <br>
+<br>
 
-                <select id="vehicle"
-                        name="vehicle">
+<select id="vehicle"
+        name="vehicle"
+        required>
 
-                    <option value="golf">
-                        Volkswagen Golf
-                    </option>
+    <option value="">-- Select a Vehicle --</option>
 
-                    <option value="polo">
-                        Volkswagen Polo
-                    </option>
+    <option value="golf">Volkswagen Golf</option>
+    <option value="polo">Volkswagen Polo</option>
+    <option value="tiguan">Volkswagen Tiguan</option>
+    <option value="amarok">Volkswagen Amarok</option>
+    <option value="passat">Volkswagen Passat</option>
+    <option value="tcross">Volkswagen T-Cross</option>
 
-                    <option value="tiguan">
-                        Volkswagen Tiguan
-                    </option>
+</select>
 
-                    <option value="amarok">
-                        Volkswagen Amarok
-                    </option>
+<br><br>
+<!-- Message -->
+<label for="message">
+    Message:
+</label>
 
-                    <option value="passat">
-                        Volkswagen Passat
-                    </option>
+<br>
 
-                    <option value="tcross">
-                        Volkswagen T-Cross
-                    </option>
+<textarea id="message"
+          name="message"
+          rows="6"
+          cols="40"
+          placeholder="Enter your enquiry here"
+          minlength="10"
+          required></textarea>
 
-                </select>
+<br><br>
+             
 
-                <br><br>
-
-                <!-- Message -->
-                <label for="message">
-                    Message:
-                </label>
-
-                <br>
-
-                <textarea id="message"
-                          name="message"
-                          rows="6"
-                          cols="40"
-                          placeholder="Enter your enquiry here">
-                </textarea>
-
-                <br><br>
+            
 
                 <!-- Submit Button -->
                 <button type="submit">
@@ -171,6 +165,7 @@
         </p>
 
     </footer>
+    <script src="js/script.js"></script>
 
 </body>
 

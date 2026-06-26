@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://jephte964.github.io/volkswagen-website-poe-part1/sitemap.xml
